@@ -1,5 +1,5 @@
 
- .sidebar-cart {
+ /* .sidebar-cart {
   position: fixed;
   right: 0;
   top: 0;
@@ -33,7 +33,99 @@
   flex-grow: 1;
   margin-top: 20px;
   overflow-y: auto;
-}  
+}   */
+
+
+
+
+.sidebar-cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 60%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease; /* لانتقال سلس */
+}
+
+.btn-d {
+  width: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-items {
+  flex-grow: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+  .sidebar-cart {
+    width: 100%; /* يشغل العرض الكامل للشاشة */
+    height: 100%; /* يشغل الارتفاع الكامل للشاشة */
+    padding: 10px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 80px; /* تقليل حجم الصورة */
+  }
+
+  .cart-item-details {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .close-btn {
+    font-size: 18px; /* تعديل حجم زر الإغلاق */
+  }
+
+  .cart-footer {
+    padding: 10px;
+    text-align: center; /* جعل النص في الوسط */
+  }
+
+  .view-cart-btn {
+    width: 100%; /* جعل زر العرض يشغل العرض الكامل */
+    padding: 12px 0;
+  }
+}
+
+
 
 
 
