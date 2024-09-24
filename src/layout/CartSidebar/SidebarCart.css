@@ -91,8 +91,8 @@
 /* Responsive Styling */
 @media (max-width: 480px) {
   .sidebar-cart {
-    width: 100%; /* يشغل العرض الكامل للشاشة */
-    height: 100%; /* يشغل الارتفاع الكامل للشاشة */
+    width: 50%; /* يشغل العرض الكامل للشاشة */
+    height: 50%; /* يشغل الارتفاع الكامل للشاشة */
     padding: 10px;
   }
 
