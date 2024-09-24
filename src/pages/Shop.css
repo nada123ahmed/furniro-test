@@ -1,0 +1,202 @@
+.shop-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .ShopImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .breadcrumb a {
+    color:black;
+    text-decoration: none;
+    
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .shopContainer {
+    padding: 20px;
+  }
+  
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+  }
+  
+  .productCard {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .priceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .newPrice {
+    font-weight: bold;
+    color:black;
+    margin-right: 30px;
+  }
+  
+  .oldPrice {
+    text-decoration: line-through;
+    color:gray;
+  }
+  
+  .cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .productCard:hover .cardOverlay {
+    opacity: 1;
+  }
+  
+  .addToCartButton {
+    background-color: rgb(184, 142, 47);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .addToCartButton:hover {
+    background-color: white;
+    color: rgb(184, 142, 47);
+    border: 1px solid rgb(184, 142, 47);
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(250, 243, 234);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: rgb(250, 243, 234);
+    
+  }
+  
+  .pagination button.active {
+    background-color: rgb(184, 142, 47);
+    color: white;
+  }
+  
+ 
+  /* NavBar.css */
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+@media (max-width: 1200px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 منتجات في الصف */
+  }
+}
+
+@media (max-width: 900px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 منتجات في الصف */
+  }
+}
+
+@media (max-width: 600px) {
+  .productsGrid {
+    grid-template-columns: 1fr; /* منتج واحد في الصف */
+  }
+}

@@ -1,0 +1,166 @@
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ .bar {
+  display: flex;
+  flex-wrap: wrap; 
+   justify-content: space-around; 
+  align-items: center; 
+  gap: 30px;
+}
+
+.barItem {
+  display: flex;
+  flex-direction: row; 
+  align-items:center;
+  /* text-align: left;  */
+  gap: 10px; 
+  padding: 10px;
+  flex: 1; 
+}
+
+.bar2 {
+  background-color: antiquewhite;
+  padding: 90px;
+  /* width: 100%; */
+}
+
+.bar img {
+  width: 50px;
+  height: 50px;
+}
+
+.barItem p {
+  font-size: 17px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .barItem {
+    flex: 1 1 45%; 
+  }
+
+  .bar img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .barItem p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .barItem {
+    flex: 1 1 100%; 
+  }
+
+  .bar {
+    gap: 20px;
+  }
+
+  .bar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .barItem p {
+    font-size: 14px;
+    text-align: center; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .barItem {
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bar img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .barItem p {
+    font-size: 13px;
+    text-align: center; 
+   
+  }
+
+  .bar2 {
+    padding: 10px;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
