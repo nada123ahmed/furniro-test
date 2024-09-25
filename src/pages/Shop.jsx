@@ -21,7 +21,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import './Shop.css';
 import useCartStore from '../cartStore';
-import { Link } from "react-router-dom";
+
 function Shop() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
