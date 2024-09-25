@@ -18,10 +18,10 @@
 
 
 import { useState, useEffect } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams, useNavigate, Link } from "react-router-dom";
 import './Shop.css';
 import useCartStore from '../cartStore';
-
+import { Link } from "react-router-dom";
 function Shop() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -71,7 +71,7 @@ function Shop() {
           <img className="logo" src="/furniro.png" alt="Logo" />
           <h1>Shop</h1>
           <nav className="breadcrumb">
-            <a href="/">Home</a> &gt; <a href="/shop">Shop</a>
+            <Link to="/">Home</Link> &gt; <span>Shop</span>
           </nav>
         </div>
       </div>

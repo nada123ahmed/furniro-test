@@ -279,7 +279,7 @@ import { useState, useEffect } from "react";
 import './SingleProduct.css';
 import { useNavigate } from 'react-router-dom';
 import useCartStore from "../cartStore";
-
+import { Link } from 'react-router-dom';
 function SingleProduct() {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -343,7 +343,7 @@ function SingleProduct() {
   return (
     <div className="single-product-container">
       <nav className="breadcrumb">
-        <a href="/">Home</a> &gt; <a href="/shop">Shop</a> &gt; {product.title}
+        <Link to="/">Home</Link> &gt; <Link to="/shop">Shop</Link> &gt; {product.title}
       </nav>
 
       <div className="product-content">

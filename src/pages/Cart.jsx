@@ -225,7 +225,7 @@ function Cart() {
           <div className="center-content">
             <h1>Cart</h1>
             <nav className="breadcrumb">
-              <a href="/">Home</a> &gt; <a href="/shop">Cart</a>
+              <Link to="/">Home</Link> &gt; <Link to="/shop">Cart</Link>
             </nav>
           </div>
         </div>

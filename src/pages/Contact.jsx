@@ -34,6 +34,7 @@ import './Contact.css';
 import Location from "../../public/Location.png";
 import Phone from "../../public/bxs_phone.png";
 import Time from "../../public/bi_clock-fill.png";
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   // حالة لإظهار رسالة النجاح
@@ -73,7 +74,7 @@ const Contact = () => {
           <img className="logo" src={Logo} alt="Logo" />
           <h1>Contact</h1>
           <nav className="breadcrumb">
-            <a href="/">Home</a> &gt; <a href="/shop">Contact</a>
+            <Link to="/">Home</Link> &gt; <Link to="/shop">Contact</Link>
           </nav>
         </div>
       </div>
