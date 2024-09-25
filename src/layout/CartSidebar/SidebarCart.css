@@ -88,11 +88,11 @@
   margin-left: 10px;
 }
 
-/* Responsive Styling */
-@media (max-width: 480px) {
+
+/* @media (max-width: 480px) {
   .sidebar-cart {
-    width: 50%; /* يشغل العرض الكامل للشاشة */
-    height: 50%; /* يشغل الارتفاع الكامل للشاشة */
+    width: 50%; 
+    height: 50%; 
     padding: 10px;
   }
 
@@ -102,7 +102,7 @@
   }
 
   .cart-item img {
-    width: 80px; /* تقليل حجم الصورة */
+    width: 80px; 
   }
 
   .cart-item-details {
@@ -111,19 +111,52 @@
   }
 
   .close-btn {
-    font-size: 18px; /* تعديل حجم زر الإغلاق */
+    font-size: 18px; 
   }
 
   .cart-footer {
     padding: 10px;
-    text-align: center; /* جعل النص في الوسط */
+    text-align: center; 
   }
 
   .view-cart-btn {
-    width: 100%; /* جعل زر العرض يشغل العرض الكامل */
+    width: 100%; 
     padding: 12px 0;
   }
+} */
+@media (max-width: 480px) {
+  .sidebar-cart {
+    width: 80%; /* Smaller width for mobile */
+    height: 80%; /* Adjust height to fit better on mobile */
+    padding: 15px;
+  }
+
+  .cart-item img {
+    width: 60px; /* Reduce image size */
+  }
+
+  .cart-item-details {
+    font-size: 14px; /* Smaller text */
+    margin-top: 5px;
+  }
+
+  .close-btn {
+    font-size: 16px; /* Smaller close button */
+  }
+
+  .cart-footer {
+    padding: 5px;
+    text-align: center; /* Center-align content */
+  }
+
+  .view-cart-btn {
+    width: 90%; /* Adjust button width */
+    padding: 10px 0;
+  }
 }
+
+
+
 
 
 
