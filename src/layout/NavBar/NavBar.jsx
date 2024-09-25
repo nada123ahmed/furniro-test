@@ -20,6 +20,57 @@
 
 
 
+// import { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import useCartStore from '../../cartStore';  // تأكد من المسار الصحيح
+// import Frame from "../../../public/Frame 168.png";
+// import CartIcon from "../../../public/ant-design_shopping-cart-outlined.png";
+// import "./NavBar.css";
+
+// function NavBar() {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const { cartCount, toggleSidebar } = useCartStore(); // Access cartCount and toggleSidebar from Zustand
+
+//   const toggleMenu = () => {
+//     setIsMenuOpen(!isMenuOpen);
+//   };
+
+//   return (
+//     <>
+//       <nav className="navbar">
+//         <div className="navbar-container">
+//           <div className="logo">
+//             <a href="/"><img src={Frame} alt="Logo" /></a>
+//           </div>
+
+//           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+//             <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+//             <li><Link to="/Shop" onClick={toggleMenu}>Shop</Link></li>
+//             <li><Link to="/Contact" onClick={toggleMenu}>Contact</Link></li>
+//             <li><Link to="/About" onClick={toggleMenu}>About</Link></li>
+//           </ul>
+
+//           <div className="cart-icon">
+//             {/* Replace Link with a button to toggle the sidebar */}
+//             <button onClick={toggleSidebar} className="cart-button">
+//               <img src={CartIcon} alt="Cart" />
+//               {cartCount > 0 && <span className="cart-count">{cartCount}</span>} {/* Display cart count */}
+//             </button>
+//           </div>
+
+//           <div className="menu-toggle" onClick={toggleMenu}>
+//             <span className="hamburger"></span>
+//           </div>
+//         </div>
+//       </nav>
+//     </>
+//   );
+// }
+
+// export default NavBar;
+
+
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useCartStore from '../../cartStore';  // تأكد من المسار الصحيح
@@ -35,6 +86,10 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -44,23 +99,28 @@ function NavBar() {
           </div>
 
           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-            <li><Link to="/Shop" onClick={toggleMenu}>Shop</Link></li>
-            <li><Link to="/Contact" onClick={toggleMenu}>Contact</Link></li>
-            <li><Link to="/About" onClick={toggleMenu}>About</Link></li>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/Shop" onClick={closeMenu}>Shop</Link></li>
+            <li><Link to="/Contact" onClick={closeMenu}>Contact</Link></li>
+            <li><Link to="/About" onClick={closeMenu}>About</Link></li>
           </ul>
 
           <div className="cart-icon">
-            {/* Replace Link with a button to toggle the sidebar */}
             <button onClick={toggleSidebar} className="cart-button">
               <img src={CartIcon} alt="Cart" />
-              {cartCount > 0 && <span className="cart-count">{cartCount}</span>} {/* Display cart count */}
+              {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
             </button>
           </div>
 
           <div className="menu-toggle" onClick={toggleMenu}>
             <span className="hamburger"></span>
           </div>
+
+          {isMenuOpen && (
+            <div className="close-button" onClick={closeMenu}>
+              &times;
+            </div>
+          )}
         </div>
       </nav>
     </>
