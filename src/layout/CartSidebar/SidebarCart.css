@@ -126,8 +126,8 @@
 } */
 @media (max-width: 480px) {
   .sidebar-cart {
-    width: 80%; /* Smaller width for mobile */
-    height: 80%; /* Adjust height to fit better on mobile */
+    width: 40%; /* Smaller width for mobile */
+    height: 40%; /* Adjust height to fit better on mobile */
     padding: 15px;
   }
 
