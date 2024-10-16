@@ -28,7 +28,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React, { useState } from 'react';
-import ShopImage from '../../public/shop-top.png';
+import ShopImage from '../../public/shop-top.webp';
 import Logo from '../../public/furniro.png';
 import './Contact.css';
 import Location from "../../public/Location.png";

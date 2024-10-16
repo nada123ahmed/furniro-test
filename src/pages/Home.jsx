@@ -5,7 +5,7 @@ import "./Home.css";
 import HomeImage from "../../public/home-hero-bg-887bfdde.png"
 import image1 from "../../public/Mask Group.png";
 import image2 from "../../public/Image-living room.png";
-import image3 from "../../public/Mask Group (1).png";
+import image3 from "../../public/home-hero-bg-887bfdde.webp";
 const Home = () => {
   const [categories, setCategories] = useState([]);
 

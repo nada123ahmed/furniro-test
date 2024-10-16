@@ -66,7 +66,7 @@ function Shop() {
   return (
     <>
       <div className="shop-container">
-        <img className="ShopImage" src="/shop-top.png" alt="Shop Background" />
+        <img className="ShopImage" src="/shop-top.webp" alt="Shop Background" />
         <div className="center-content">
           <img className="logo" src="/furniro.png" alt="Logo" />
           <h1>Shop</h1>
