@@ -26,8 +26,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useCartStore from '../../cartStore';  // تأكد من المسار الصحيح
-import Frame from "../../../public/Frame 168.png";
-import CartIcon from "../../../public/ant-design_shopping-cart-outlined.png";
+import Frame from "../../../public/Frame 168.webp";
+import CartIcon from "../../../public/ant-design_shopping-cart-outlined.webp";
 import "./NavBar.css";
 
 function NavBar() {

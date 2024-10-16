@@ -29,11 +29,11 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React, { useState } from 'react';
 import ShopImage from '../../public/shop-top.webp';
-import Logo from '../../public/furniro.png';
+import Logo from '../../public/Funiro..webp';
 import './Contact.css';
-import Location from "../../public/Location.png";
-import Phone from "../../public/bxs_phone.png";
-import Time from "../../public/bi_clock-fill.png";
+import Location from "../../public/Location.webp";
+import Phone from "../../public/bxs_phone.webp";
+import Time from "../../public/bi_clock-fill.webp";
 import { Link } from 'react-router-dom';
 
 const Contact = () => {

@@ -1,9 +1,9 @@
 
 
-import Icon1 from "../../../public/trophy 1.png";
-import Icon2 from "../../../public/guarantee.png";
-import Icon3 from "../../../public/shipping.png";
-import Icon4 from "../../../public/customer-support.png";
+import Icon1 from "../../../public/trophy 1.webp";
+import Icon2 from "../../../public/guarantee.webp";
+import Icon3 from "../../../public/shipping.webp";
+import Icon4 from "../../../public/customer-support.webp";
 import "./Bar.css";
 
 function Bar() {
